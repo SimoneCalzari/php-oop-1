@@ -1,0 +1,17 @@
+.mega-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+header,
+footer {
+  background-color: black;
+  color: white;
+}
+
+main {
+  flex-grow: 1;
+  overflow-y: auto;
+}
