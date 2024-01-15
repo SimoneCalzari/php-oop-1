@@ -6,11 +6,16 @@ require_once __DIR__ . '/../database/db.php';
 
 <main>
   <div class="container">
-    <div class="row">
+    <!-- CARDS -->
+    <div class="row cards py-5">
       <?php foreach ($movies as $movie) : ?>
-        <div class="col-4">
-          <div class="card" style="width: 18rem;">
+        <!-- CARD -->
+        <div class="col-3">
+          <div class="card">
+            <!-- IMMAGINE FILM -->
             <img src="<?php echo "img/$movie->img" ?>" class="card-img-top" alt="Locandina Film">
+            <!-- /IMMAGINE FILM -->
+            <!-- INFO FILM -->
             <div class="card-body">
               <h5 class="card-title">Titolo Originale</h5>
               <p class="card-text">
@@ -29,10 +34,12 @@ require_once __DIR__ . '/../database/db.php';
                 <?php $movie->showGenres($movie->genres); ?>
               </p>
             </div>
+            <!-- /INFO FILM -->
           </div>
         </div>
+        <!-- CARD -->
       <?php endforeach; ?>
-
     </div>
+    <!-- /CARDS -->
   </div>
 </main>

@@ -15,3 +15,20 @@ main {
   flex-grow: 1;
   overflow-y: auto;
 }
+.cards {
+  justify-content: space-between;
+}
+
+.card-img-top {
+  height: 25vw;
+}
+
+.card-title {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.card-text {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
